@@ -1,0 +1,33 @@
+@use "./variables" as v;
+
+@mixin text($c, $fw, $fs, $dis, $jc, $txd) {
+    color: $c;
+    font-weight: $fw ;
+    font-size: $fs;
+    display: $dis;
+    justify-content: $jc ;
+    text-decoration: $txd ;
+}
+
+%box {
+    padding: 35px;
+    gap: 15px;
+    margin: 40px;
+    border-radius: 4px;
+}
+
+%box2 {
+    gap: 20px;
+    padding: 25px;
+    background-color: v.$color2;
+    margin: 25px;
+    margin-bottom: 90px;
+    border-radius: 4px;
+}
+
+%img-h {
+    width: 40vw;
+    height: auto;
+    padding: 25px;
+}
+

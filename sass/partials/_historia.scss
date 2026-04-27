@@ -1,33 +1,21 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixings" as m;
 
 main {
     .subtitle_history1 {
-        color: #ffffff;
+        @include m.text(#ffffff, 300, 3.3rem, flex, center, underline v.$color3);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 3.3rem;
-        display: flex;
-        justify-content: center;
         padding: 20px;
-        text-decoration: underline v.$color3;
     }
 
     .history_div1 {
-        color: #ffffff;
-        display: flex;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         flex-direction: row-reverse;
         align-items: center;
-        gap: 20px;
-        padding: 25px;
-        background-color: v.$color2;
-        margin: 25px;
-        margin-bottom: 90px;
-        border-radius: 4px;
+        @extend %box2;
 
         .img_history1 {
-            width: 40vw;
-            height: auto;
-            padding: 25px;
+            @extend %img-h;
         }
 
         .text_history1 {
@@ -37,20 +25,12 @@ main {
     }
 
     .history_div2 {
-        color: #ffffff;
-        display: flex;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         align-items: center;
-        gap: 20px;
-        padding: 25px;
-        background-color: v.$color2;
-        margin: 25px;
-        margin-bottom: 90px;
-        border-radius: 4px;
+        @extend %box2;
 
         .img_history2 {
-            width: 40vw;
-            height: auto;
-            padding: 25px;
+            @extend %img-h;
         }
 
         .text_history2 {
@@ -60,21 +40,13 @@ main {
     }
 
     .history_div3 {
-        color: #ffffff;
-        display: flex;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         flex-direction: row-reverse;
         align-items: center;
-        gap: 20px;
-        padding: 25px;
-        background-color: v.$color2;
-        margin: 25px;
-        margin-bottom: 90px;
-        border-radius: 4px;
+        @extend %box2;
 
         .img_history3 {
-            width: 40vw;
-            height: auto;
-            padding: 25px;
+            @extend %img-h;
         }
 
         .text_history3 {
@@ -84,20 +56,12 @@ main {
     }
 
     .history_div4 {
-        color: #ffffff;
-        display: flex;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         align-items: center;
-        gap: 20px;
-        padding: 25px;
-        background-color: v.$color2;
-        margin: 25px;
-        margin-bottom: 90px;
-        border-radius: 4px;
+        @extend %box2;
 
         .img_history4 {
-            width: 40vw;
-            height: auto;
-            padding: 25px;
+            @extend %img-h;
         }
 
         .text_history4 {
@@ -107,21 +71,13 @@ main {
     }
 
     .history_div5 {
-        color: #ffffff;
-        display: flex;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         flex-direction: row-reverse;
         align-items: center;
-        gap: 20px;
-        padding: 25px;
-        background-color: v.$color2;
-        margin: 25px;
-        margin-bottom: 90px;
-        border-radius: 4px;
+        @extend %box2;
 
         .img_history5 {
-            width: 40vw;
-            height: auto;
-            padding: 25px;
+            @extend %img-h;
         }
 
         .text_history5 {

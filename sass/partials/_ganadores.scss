@@ -1,4 +1,5 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixings" as m;
 
 main {
     .game_section1 {
@@ -20,9 +21,7 @@ main {
             }
 
             .text_game {
-                font-weight: 200;
-                font-size: 2rem;
-                color: #ffffff;
+                @include m.text(#ffffff, 200, 2rem, flex, center, none);
                 padding: 15px;
                 background-color: v.$color2;
             }

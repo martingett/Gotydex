@@ -85,19 +85,41 @@ header .web1 .img_pag1 {
   transform: scale(1.1);
 }
 
+main .contact_form1, main .comment_contact1, main .text_contact3 {
+  padding: 35px;
+  gap: 15px;
+  margin: 40px;
+  border-radius: 4px;
+}
+
+main .history_div1, main .history_div2, main .history_div3, main .history_div4, main .history_div5 {
+  gap: 20px;
+  padding: 25px;
+  background-color: rgba(109, 96, 116, 0.062745098);
+  margin: 25px;
+  margin-bottom: 90px;
+  border-radius: 4px;
+}
+
+main .history_div1 .img_history1, main .history_div2 .img_history2, main .history_div3 .img_history3, main .history_div4 .img_history4, main .history_div5 .img_history5 {
+  width: 40vw;
+  height: auto;
+  padding: 25px;
+}
+
 body {
   background-color: #1f1e29;
 }
 
 main h1 {
-  font-family: space grotesk, sans-serif;
+  color: #ffffff;
   font-weight: 300;
   font-size: 3.3rem;
   display: flex;
   justify-content: center;
-  padding: 20px;
-  color: #ffffff;
   text-decoration: underline #e2c05f;
+  font-family: space grotesk, sans-serif;
+  padding: 20px;
 }
 main .img_container1 {
   display: flex;
@@ -111,13 +133,14 @@ main .img_container1 .img_body1 {
 }
 main .theme_subtitle_body1 {
   color: #ffffff;
-  font-family: space grotesk, sans-serif;
-  font-weight: 300px;
+  font-weight: 300;
   font-size: 3rem;
-  color: #e2c05f;
   display: flex;
-  flex-direction: row;
   justify-content: center;
+  text-decoration: none;
+  font-family: space grotesk, sans-serif;
+  color: #e2c05f;
+  flex-direction: row;
   background-color: rgba(109, 96, 116, 0.062745098);
   padding: 40px;
   margin: 50px;
@@ -140,10 +163,10 @@ main .section1 .img_container2 .img_body2 {
   border-radius: 8px;
 }
 main .section1 .img_container2 .info_section1 {
+  color: #ffffff;
   font-family: space grotesk, sans-serif;
   font-weight: 500;
   font-size: 2rem;
-  color: #ffffff;
   max-width: 762px;
   padding-left: 40px;
   padding-top: 5px;
@@ -161,39 +184,34 @@ main .section1 .img_container2 .info_section1 .subtitle_body1 {
 
 main .subtitle_contact1 {
   color: #ffffff;
-  font-family: space grotesk, sans-serif;
   font-weight: 300;
   font-size: 3.3rem;
   display: flex;
   justify-content: center;
-  padding: 20px;
   text-decoration: underline #e2c05f;
+  font-family: space grotesk, sans-serif;
+  padding: 20px;
 }
 main .contact_form1 {
   color: #ffffff;
-  font-family: space grotesk, sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   display: flex;
   justify-content: center;
+  text-decoration: none;
+  font-family: space grotesk, sans-serif;
+  border-radius: 80px;
   background-color: rgba(109, 96, 116, 0.062745098);
-  padding: 35px;
-  gap: 15px;
-  margin: 40px;
-  border-radius: 4px;
 }
 main .comment_contact1 {
   color: #ffffff;
-  background-color: rgba(109, 96, 116, 0.062745098);
-  font-family: space grotesk, sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
   display: grid;
   justify-content: center;
-  padding: 35px;
-  gap: 15px;
-  margin: 40px;
-  border-radius: 4px;
+  text-decoration: none;
+  font-family: space grotesk, sans-serif;
+  background-color: rgba(109, 96, 116, 0.062745098);
 }
 main .comment_contact1 .box_contact1 {
   width: 60vw;
@@ -214,34 +232,29 @@ main .comment_contact1 .button_contact1:hover {
 }
 main .text_contact3 {
   color: #ffffff;
-  font-family: space grotesk, sans-serif;
   font-weight: 300;
   font-size: 2rem;
-  justify-content: center;
   display: flex;
-  padding: 15px;
-  gap: 15px;
+  justify-content: center;
   text-decoration: underline #e2c05f;
+  font-family: space grotesk, sans-serif;
+  padding: 15px;
   background-color: rgba(109, 96, 116, 0.062745098);
-  padding: 35px;
-  margin: 40px;
-  border-radius: 4px;
 }
 main .box_contact2 {
   color: #ffffff;
-  font-family: space grotesk, sans-serif;
   font-weight: 300;
   font-size: 1.8rem;
-  justify-content: center;
   display: flex;
+  justify-content: center;
+  text-decoration: none;
+  font-family: space grotesk, sans-serif;
   padding: 15px;
   gap: 15px;
 }
 main .box_contact2 .img_contact1 {
-  font-size: 3rem;
   width: 10vw;
   border-radius: 30px;
-  color: #ffffff;
   cursor: pointer;
   transition: transform 0.4s ease;
 }
@@ -273,9 +286,12 @@ main .game_section1 .game_div .number_game {
   color: #e2c05f;
 }
 main .game_section1 .game_div .text_game {
+  color: #ffffff;
   font-weight: 200;
   font-size: 2rem;
-  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
   padding: 15px;
   background-color: rgba(109, 96, 116, 0.062745098);
 }
@@ -295,30 +311,23 @@ main .game_section1 .game_div .game_button:hover {
 
 main .subtitle_history1 {
   color: #ffffff;
-  font-family: space grotesk, sans-serif;
   font-weight: 300;
   font-size: 3.3rem;
   display: flex;
   justify-content: center;
-  padding: 20px;
   text-decoration: underline #e2c05f;
+  font-family: space grotesk, sans-serif;
+  padding: 20px;
 }
 main .history_div1 {
   color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
   display: flex;
+  justify-content: center;
+  text-decoration: none;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 20px;
-  padding: 25px;
-  background-color: rgba(109, 96, 116, 0.062745098);
-  margin: 25px;
-  margin-bottom: 90px;
-  border-radius: 4px;
-}
-main .history_div1 .img_history1 {
-  width: 40vw;
-  height: auto;
-  padding: 25px;
 }
 main .history_div1 .text_history1 {
   font-size: 2.3rem;
@@ -326,19 +335,12 @@ main .history_div1 .text_history1 {
 }
 main .history_div2 {
   color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
   display: flex;
+  justify-content: center;
+  text-decoration: none;
   align-items: center;
-  gap: 20px;
-  padding: 25px;
-  background-color: rgba(109, 96, 116, 0.062745098);
-  margin: 25px;
-  margin-bottom: 90px;
-  border-radius: 4px;
-}
-main .history_div2 .img_history2 {
-  width: 40vw;
-  height: auto;
-  padding: 25px;
 }
 main .history_div2 .text_history2 {
   font-size: 2.3rem;
@@ -346,20 +348,13 @@ main .history_div2 .text_history2 {
 }
 main .history_div3 {
   color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
   display: flex;
+  justify-content: center;
+  text-decoration: none;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 20px;
-  padding: 25px;
-  background-color: rgba(109, 96, 116, 0.062745098);
-  margin: 25px;
-  margin-bottom: 90px;
-  border-radius: 4px;
-}
-main .history_div3 .img_history3 {
-  width: 40vw;
-  height: auto;
-  padding: 25px;
 }
 main .history_div3 .text_history3 {
   font-size: 2.3rem;
@@ -367,19 +362,12 @@ main .history_div3 .text_history3 {
 }
 main .history_div4 {
   color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
   display: flex;
+  justify-content: center;
+  text-decoration: none;
   align-items: center;
-  gap: 20px;
-  padding: 25px;
-  background-color: rgba(109, 96, 116, 0.062745098);
-  margin: 25px;
-  margin-bottom: 90px;
-  border-radius: 4px;
-}
-main .history_div4 .img_history4 {
-  width: 40vw;
-  height: auto;
-  padding: 25px;
 }
 main .history_div4 .text_history4 {
   font-size: 2.3rem;
@@ -387,20 +375,13 @@ main .history_div4 .text_history4 {
 }
 main .history_div5 {
   color: #ffffff;
+  font-weight: 300;
+  font-size: 1.8rem;
   display: flex;
+  justify-content: center;
+  text-decoration: none;
   flex-direction: row-reverse;
   align-items: center;
-  gap: 20px;
-  padding: 25px;
-  background-color: rgba(109, 96, 116, 0.062745098);
-  margin: 25px;
-  margin-bottom: 90px;
-  border-radius: 4px;
-}
-main .history_div5 .img_history5 {
-  width: 40vw;
-  height: auto;
-  padding: 25px;
 }
 main .history_div5 .text_history5 {
   font-size: 2.3rem;

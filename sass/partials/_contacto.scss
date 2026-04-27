@@ -1,43 +1,26 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixings" as m;
 
 main {
     .subtitle_contact1 {
-        color: #ffffff;
+        @include m.text(#ffffff, 300, 3.3rem, flex, center, underline v.$color3);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 3.3rem;
-        display: flex;
-        justify-content: center;
         padding: 20px;
-        text-decoration: underline v.$color3;
     }
 
     .contact_form1 {
-        color: #ffffff;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 1.8rem;
-        display: flex;
-        justify-content: center;
+        @extend %box;
+        border-radius: 80px;
         background-color: v.$color2;
-        padding: 35px;
-        gap: 15px;
-        margin: 40px;
-        border-radius: 4px;
     }
 
     .comment_contact1 {
-        color: #ffffff;
-        background-color: v.$color2;
+        @include m.text(#ffffff, 300, 1.8rem, grid, center, none);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 1.8rem;
-        display: grid;
-        justify-content: center;
-        padding: 35px;
-        gap: 15px;
-        margin: 40px;
-        border-radius: 4px;
+        background-color: v.$color2;
+        @extend %box;
 
         .box_contact1 {
             width: 60vw;
@@ -61,38 +44,23 @@ main {
     }
 
     .text_contact3 {
-        color: #ffffff;
+        @include m.text(#ffffff, 300, 2rem, flex, center, underline v.$color3);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 2rem;
-        justify-content: center;
-        display: flex;
+        @extend %box;
         padding: 15px;
-        gap: 15px;
-        text-decoration: underline v.$color3;
         background-color: v.$color2;
-        padding: 35px;
-        margin: 40px;
-        border-radius: 4px;
     }
 
     .box_contact2 {
-        color: #ffffff;
+        @include m.text(#ffffff, 300, 1.8rem, flex, center, none);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 1.8rem;
-        justify-content: center;
-        display: flex;
         padding: 15px;
         gap: 15px;
 
 
         .img_contact1 {
-            font-size: 3rem;
             width: 10vw;
             border-radius: 30px;
-            color: #ffffff;
-            ;
             cursor: pointer;
             transition: transform 0.4s ease;
 
@@ -100,7 +68,6 @@ main {
                 transition-duration: 200ms;
                 transform: scale(1.06);
             }
-        }
-
+        }   
     }
 }

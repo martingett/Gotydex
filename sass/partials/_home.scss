@@ -1,4 +1,5 @@
 @use "../utilities/variables" as v;
+@use "../utilities/mixings" as m;
 
 body {
     background-color: v.$color1;
@@ -6,14 +7,9 @@ body {
 
 main {
     h1 {
+        @include m.text(#ffffff, 300, 3.3rem, flex, center, underline v.$color3);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300;
-        font-size: 3.3rem;
-        display: flex;
-        justify-content: center;
         padding: 20px;
-        color: #ffffff;
-        text-decoration: underline v.$color3;
     }
 
     .img_container1 {
@@ -29,14 +25,10 @@ main {
     }
 
     .theme_subtitle_body1 {
-        color: #ffffff;
+        @include m.text(#ffffff, 300, 3rem, flex, center, none);
         font-family: v.$fuente1, sans-serif;
-        font-weight: 300px;
-        font-size: 3rem;
         color: v.$color3;
-        display: flex;
         flex-direction: row;
-        justify-content: center;
         background-color: v.$color2;
         padding: 40px;
         margin: 50px;
@@ -61,10 +53,10 @@ main {
             }
 
             .info_section1 {
+                color: #ffffff;
                 font-family: v.$fuente1, sans-serif;
                 font-weight: 500;
                 font-size: 2rem;
-                color: #ffffff;
                 max-width: 762px;
                 padding-left: 40px;
                 padding-top: 5px;
